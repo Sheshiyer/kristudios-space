@@ -1,0 +1,40 @@
+{
+  "name": "kristudios-website",
+  "version": "1.0.0",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "description": "Official website for Kristudios - The Cultural Preservation Institution. Documenting South Indian regional traditions and rituals.",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "clean": "rm -rf dist/*",
+    "build:parcel": "parcel build src/index.html --no-content-hash --no-source-maps --public-url ./",
+    "build": "npm run clean && npm run build:parcel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristudios/website.git"
+  },
+  "keywords": [
+    "culture",
+    "preservation",
+    "south-india",
+    "rituals",
+    "museum"
+  ],
+  "author": "Kristudios",
+  "license": "MIT",
+  "homepage": "https://kristudios.com",
+  "bugs": {
+    "url": "https://github.com/kristudios/website/issues"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.16.3",
+    "@parcel/transformer-jsonld": "^2.16.3",
+    "@parcel/transformer-webmanifest": "^2.16.3",
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "@studio-freight/lenis": "^0.1.2",
+    "gsap": "^3.10.4",
+    "imagesloaded": "^5.0.0"
+  }
+}
